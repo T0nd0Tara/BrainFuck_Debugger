@@ -1,9 +1,11 @@
 # BrainFuck_Debugger
-A c++ debugger and interperter for [brain fuck](https://en.wikipedia.org/wiki/Brainfuck)
+A c++ debugger and interperter for [Brain Fuck](https://en.wikipedia.org/wiki/Brainfuck)
 
 ## How To Use (Linux)
 ```./brainfuck_debugger <args> <path_to_brainfuck_file>```
+
 Use `-h` flag to see help
+
 
 ## Scripts
 ### hw.bf
