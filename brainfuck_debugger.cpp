@@ -288,7 +288,10 @@ void debug(std::vector<OP>& prog){
                 std::cout << ip << "\n";
                 continue;
             }
-            break;
+            if (sInput == "q")
+                break;
+            
+            std::cout << red << "Unknown input '" << sInput << "'\n" << def;
         }
         if (!bContinue) break;
 
@@ -313,11 +316,12 @@ void printUsage(std::string sCompiler){
     std::cout << "\t`-ir <uint>` : sets the 'Instruction Range' for debug mode\n";
     std::cout << "\n";
     std::cout << "DEBUG INSTRUCTIONS:\n";
-    std::cout << "\t`<enter>`     : advance the instruction pointer\n";
+    std::cout << "\t`<enter>`     : advances the instruction pointer\n";
     std::cout << "\t`i`           : prints the instruction pointer\n";
     std::cout << "\t`c:<uint>`    : prints the value inside cell <uint>\n";
     std::cout << "\t`goto <uint>` : advances the instruction pointer until it's <uint> or until end of program\n";
     std::cout << "\t`jmp <uint>`  : advances the instruction pointer  <uint> times\n";
+    std::cout << "\t`q`           : quits the program\n";
     std::cout << "\n";
     std::cout << def;
 }
