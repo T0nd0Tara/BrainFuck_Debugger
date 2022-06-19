@@ -7,6 +7,9 @@ A c++ debugger and interperter for [Brain Fuck](https://en.wikipedia.org/wiki/Br
 Use `-h` flag to see help
 
 
+## Screenshot
+![BrainFuck_Debugger_Screenshot](screenshot.png)
+
 ## Scripts
 ### hw.bf
 'Hello World!' program (literaly took it from the wiki page).
